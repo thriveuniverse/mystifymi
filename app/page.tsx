@@ -2,14 +2,36 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen flex-col items-center justify-center p-8">
-  <h1 className="text-4xl font-bold mb-8">Hello, I'm Mirrie</h1>
-  <p className="text-xl text-center max-w-2xl">
-    English mum in France • perpetual work in progress • untangling the knotted wool one thought at a time
-  </p>
-  <p className="mt-8">Site under gentle reconstruction — come back soon ✨</p>
-</main>
-    </div>
+    <section className="relative h-96 md:h-screen max-h-screen overflow-hidden">
+      {/* HERO IMAGE */}
+      <Image
+        src="/images/hero.jpg"
+        alt="Cozy mandala header with woman at desk"
+        fill
+        priority
+        className="object-cover object-right"
+      />
+
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* HERO TEXT */}
+      <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
+        <div className="text-center text-white max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">
+            Hello, I'm Mirrie
+          </h1>
+
+          <p className="text-xl">
+            English mum in France • perpetual work in progress • untangling the
+            knotted wool one thought at a time
+          </p>
+
+          <p className="mt-8 text-lg">
+            Site under gentle reconstruction — come back soon ✨
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }

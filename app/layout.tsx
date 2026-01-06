@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -19,30 +20,29 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b bg-white/80 backdrop-blur sticky top-0 z-10">
+        <header className="border-b bg-white/80 backdrop-blur sticky top-0 z-50">
           <nav className="max-w-4xl mx-auto p-6 flex justify-between items-center">
-            <a href="/" className="text-2xl font-bold">
+            <Link href="/" className="text-2xl font-bold">
               mystifymi
-            </a>
+            </Link>
+
             <div className="space-x-8 text-lg">
-              <a href="/">Home</a>
-              <a href="/about">About</a>
-              <a href="/blog">Blog</a>
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+              <Link href="/blog">Blog</Link>
             </div>
           </nav>
         </header>
 
         <main>{children}</main>
-
-        {/* You can add a footer here later */}
       </body>
     </html>
   );
