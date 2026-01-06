@@ -6,7 +6,7 @@ export default function Home() {
       {/* HERO IMAGE */}
       <Image
         src="/images/hero.jpg"
-        alt="Cozy mandala header with woman at desk"
+        alt="flower design by jgnkelly with woman at desk"
         fill
         priority
         className="object-cover object-right"
@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* HERO TEXT */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
-        <div className="text-center text-white max-w-2xl">
+        <div className="text-center text-black max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Hello, I'm Mirrie
           </h1>
