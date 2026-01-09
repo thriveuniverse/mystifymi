@@ -13,7 +13,7 @@ export default function Home() {
       />
 
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-transparent" />
+      <div className="absolute inset-0 bg-white/30" />
 
       {/* HERO TEXT */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
