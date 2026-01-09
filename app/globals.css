@@ -1,24 +1,60 @@
 @import "tailwindcss";
 
+/* =========================
+   Theme variables
+   ========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base colours */
+  --background: #F5EFE4;   /* warm cream */
+  --foreground: #1F3D2B;   /* deep forest green */
+
+  /* Greens */
+  --green-strong: #1F3D2B; /* headings, primary text */
+  --green-soft: #2F5D44;   /* links, buttons */
+  --green-muted: #8FAF9A;  /* subtle accents */
+
+  /* Neutrals */
+  --cream-soft: #F5EFE4;
+  --cream-muted: #E9E0D2;
 }
 
+/* =========================
+   Tailwind theme bridge
+   ========================= */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-primary: var(--green-strong);
+  --color-secondary: var(--green-soft);
+  --color-accent: var(--green-muted);
+
+  --color-surface: var(--cream-muted);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* =========================
+   Dark mode (warm, not harsh)
+   ========================= */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121A16;
+    --foreground: #E6EFE9;
+
+    --green-strong: #A7C7B5;
+    --green-soft: #8FAF9A;
+    --green-muted: #5C7F6B;
+
+    --cream-soft: #121A16;
+    --cream-muted: #1A2620;
   }
 }
 
+/* =========================
+   Base styles
+   ========================= */
 body {
   background: var(--background);
   color: var(--foreground);

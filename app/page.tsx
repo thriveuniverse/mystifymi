@@ -13,23 +13,23 @@ export default function Home() {
       />
 
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-transparent" />
 
       {/* HERO TEXT */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
-        <div className="text-center text-black max-w-2xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Hello, I'm Mirrie
-          </h1>
+        <div className="text-center text-primary max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">
+  Hello, I'm Mirrie
+</h1>
 
-          <p className="text-xl">
-            English mum in France • perpetual work in progress • untangling the
-            knotted wool one thought at a time
-          </p>
+<p className="text-xl text-secondary">
+  English mum in France • perpetual work in progress • untangling the
+  knotted wool one thought at a time
+</p>
 
-          <p className="mt-8 text-lg">
-            Site under gentle reconstruction — come back soon ✨
-          </p>
+<p className="mt-8 text-lg text-secondary">
+  Site under gentle reconstruction — come back soon ✨
+</p>
         </div>
       </div>
     </section>
