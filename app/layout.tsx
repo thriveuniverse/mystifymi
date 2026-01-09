@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b bg-white/80 backdrop-blur sticky top-0 z-50">
+        <header className="border-w bg-white/80 backdrop-blur sticky top-0 z-50">
           <nav className="max-w-4xl mx-auto p-6 flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold">
               mystifymi
