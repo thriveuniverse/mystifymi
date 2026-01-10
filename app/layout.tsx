@@ -43,6 +43,11 @@ export default function RootLayout({
         </header>
 
         <main>{children}</main>
+        <footer className="border-t mt-20 py-10">
+          <div className="max-w-4xl mx-auto px-6 text-center text-sm text-gray-500">
+            Copyright &copy; {new Date().getFullYear()}  mystifymi – All thoughts my own ✨
+          </div>
+        </footer>
       </body>
     </html>
   );
