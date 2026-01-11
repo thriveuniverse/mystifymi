@@ -24,7 +24,7 @@ export default function Home() {
 
               {/* TEXT COLUMN */}
               <div className="text-left max-w-xl">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 md:mb-10 text-primary leading-tight">
+                <h1 className="text-3xl md:text-4xl font-bold mb-6 md:mb-10 text-primary leading-tight">
                   A Delicate Thread Through Time
                 </h1>
 

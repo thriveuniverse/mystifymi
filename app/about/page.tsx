@@ -1,8 +1,8 @@
 // app/about/page.tsx
 export default function About() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12 md:py-16">
-      <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">
+    <div className="max-w-2xl mx-auto px-6 py-12 md:py-16">
+      <h1 className="text-2xl md:text-3xl font-bold mb-10 text-center md:text-left">
         Who is Mirrie?
       </h1>
 
