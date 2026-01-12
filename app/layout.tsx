@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "mystifymi",
   description: "Untangling thoughts, one post at a time – Mirrie",
+  openGraph: {
+    title: "What if abundance really is the answer?",
+    description: "Exploring Elon Musk's vision of a world driven by passion, not survival.",
+    images: "/images/hero.jpg",
+  },
 };
 
 export default function RootLayout({
