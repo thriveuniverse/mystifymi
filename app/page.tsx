@@ -71,8 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Remove or comment out the old separate buttons section */}
-      {/* <section className="bg-background"> ... old buttons ... </section> */}
+      
     </>
   );
 }
