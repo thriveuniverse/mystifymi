@@ -9,11 +9,12 @@ export default function ResourcesPage() {
       <div className="prose prose-lg mb-16 text-center">
         <p>There are so many quotes that describe my life:</p>
         <ul className="list-disc list-inside space-y-2 mb-8">
-          <li>Chaos is proof that you are truly living</li>
-          <li>Your mess is part of your journey</li>
-          <li>Messy roads often lead to beautiful places</li>
-          <li>Embrace the storm because calm never taught you much</li>
-        </ul>
+  <li><em>Chaos is proof that you are truly living</em></li>
+  <li><em>Your mess is part of your journey</em></li>
+  <li><em>Messy roads often lead to beautiful places</em></li>
+  <li><em>Embrace the storm because calm never taught you much</em></li>
+</ul>
+
 
         <p>
           In honour of the threads that have led me to this point, I thought I would pull it all together. 
