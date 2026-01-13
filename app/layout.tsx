@@ -45,7 +45,7 @@ export default function RootLayout({
           <nav className="max-w-4xl mx-auto p-6 flex justify-between items-center">
             <Link
   href="/"
-  className="text-5xl font-normal tracking-wide"
+  className="text-4xl font-normal tracking-wide"
   style={{ fontFamily: "var(--font-signature)" }}
 >
   MystifyMi
