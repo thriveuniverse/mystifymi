@@ -16,6 +16,13 @@
   /* Neutrals */
   --cream-soft: #F5EFE4;
   --cream-muted: #E9E0D2;
+  /* Reds */
+  --red-deep: #6B1F1A;
+  --red-soft: #9A3A32;
+
+  /* Golds */
+  --gold-soft: #C6A75E;
+  --gold-deep: #9E8442;
 }
 
 /* =========================
@@ -33,7 +40,29 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* Borders */
+  --color-border: var(--cream-muted);
+  --color-border-hover: var(--green-muted);
+
+  /* Interactive */
+  --color-link: var(--green-soft);
+  --color-link-hover: var(--green-strong);
+
+  /* Accent (rare, intentional) */
+  --color-accent: var(--green-muted);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-accent: var(--gold-soft);
+  --color-accent-strong: var(--gold-deep);
+
+  --color-emphasis: var(--red-soft);
+  --color-emphasis-strong: var(--red-deep);
+  
 }
+
+
 
 /* =========================
    Dark mode (warm, not harsh)
@@ -49,6 +78,12 @@
 
     --cream-soft: #121A16;
     --cream-muted: #1A2620;
+
+     --red-deep: #B56A62;
+    --red-soft: #D08A82;
+
+    --gold-soft: #D8C27A;
+    --gold-deep: #BFA25E;
   }
 }
 
