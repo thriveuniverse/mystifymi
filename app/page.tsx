@@ -128,7 +128,7 @@ export default function Home() {
             Watching kids and toddlers just bound through chaos can remind us of a freedom we have lost as adults.
           </p>
           <Link
-            href="/ai-frees-the-brain"
+            href="/manifesto"
             className="inline-flex items-center text-green-soft font-medium hover:underline"
           >
             Read →
