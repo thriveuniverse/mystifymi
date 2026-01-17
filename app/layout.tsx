@@ -52,11 +52,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/resources">Resources</Link>
             </div>
 
-            {/* Mobile hamburger */}
-            
+ <div className="hidden md:flex space-x-8 text-lg">
+    {/* ...your Links... */}
+  </div>
+
+  {/* Mobile menu (hamburger + dropdown) */}
+  <div className="md:hidden">
+    <MobileMenu />
+  </div>            
           </nav>
 
-          {/* Mobile dropdown */}
           
         </header>
 

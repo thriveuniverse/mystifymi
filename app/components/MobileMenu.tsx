@@ -19,15 +19,15 @@ export default function MobileMenu() {
 
       {/* Mobile dropdown */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur border-t">
-          <div className="flex flex-col items-center py-6 space-y-6 text-lg">
-            <Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-            <Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
-            <Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link>
-            <Link href="/manifesto" onClick={() => setIsMenuOpen(false)}>Manifesto</Link>
-            <Link href="/resources" onClick={() => setIsMenuOpen(false)}>Resources</Link>
-          </div>
-        </div>
+  <div className="md:hidden bg-white/95 backdrop-blur border-t **z-50** absolute w-full left-0 top-full">  {/* ← Add z-50 + absolute positioning */}
+    <div className="flex flex-col items-center py-6 space-y-6 text-lg">
+      <Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+      <Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+      <Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+      <Link href="/manifesto" onClick={() => setIsMenuOpen(false)}>Manifesto</Link>
+      <Link href="/resources" onClick={() => setIsMenuOpen(false)}>Resources</Link>
+    </div>
+  </div>
       )}
     </>
   );
