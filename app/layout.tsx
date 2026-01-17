@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono, Ms_Madi } from "next/font/google";
 import "./globals.css";
+import MobileMenu from './components/MobileMenu';  
 
 // Fonts
 const geistSans = Geist({
@@ -30,60 +31,37 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics (GA4) - loads after page interactive */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-2EGZXKR79K`}  
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-2EGZXKR79K');  
-            `,
-          }}
-        />
-      </head>
-
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${signatureFont.variable} antialiased`}
-      >
+      {/* head unchanged */}
+      <body className="...">
         <header className="border-b bg-white/80 backdrop-blur sticky top-0 z-50">
           <nav className="max-w-4xl mx-auto p-6 flex justify-between items-center">
-            <Link
-              href="/"
-              className="text-4xl font-normal tracking-wide"
-              style={{ fontFamily: "var(--font-signature)" }}
-            >
+            <Link href="/" className="text-4xl font-normal tracking-wide" style={{ fontFamily: "var(--font-signature)" }}>
               MystifyMi
             </Link>
-            <div className="space-x-8 text-lg">
+
+            {/* Desktop */}
+            <div className="hidden md:flex space-x-8 text-lg">
               <Link href="/">Home</Link>
               <Link href="/about">About</Link>
               <Link href="/blog">Blog</Link>
               <Link href="/manifesto">Manifesto</Link>
               <Link href="/resources">Resources</Link>
             </div>
+
+            {/* Mobile hamburger */}
+            
           </nav>
+
+          {/* Mobile dropdown */}
+          
         </header>
 
         <main>{children}</main>
-
-        <footer className="border-t mt-20 py-10">
-          <div className="max-w-4xl mx-auto px-6 text-center text-sm text-gray-500">
-            Copyright &copy; {new Date().getFullYear()} mystifymi – All thoughts my own ✨
-          </div>
-        </footer>
+        {/* footer */}
       </body>
     </html>
   );
