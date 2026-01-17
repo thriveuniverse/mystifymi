@@ -6,8 +6,7 @@ export default function Home() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="relative h-[80vh] md:h-screen overflow-hidden">  {/* Slightly shorter for better mobile */}
-        {/* BACKGROUND IMAGE */}
+<div className="relative z-10 flex-grow flex flex-col justify-center pb-12 md:pb-0">        {/* BACKGROUND IMAGE */}
         <Image
           src="/images/hero.jpg"
           alt="flower design by jgnkelly"
@@ -71,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
       {/* ================= FEATURED THOUGHTS ================= */}
 <section className="py-24 bg-cream-soft">
   <div className="max-w-6xl mx-auto px-6">

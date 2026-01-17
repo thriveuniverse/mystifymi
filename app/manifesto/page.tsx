@@ -14,12 +14,12 @@ export default function ManifestoPage() {
       {/* Main content – prose for beautiful readability */}
       <div className="prose prose-lg md:prose-xl prose-headings:text-green-strong prose-p:text-gray-800 prose-li:text-gray-800 max-w-none space-y-8">
         <p>
-          I remember reading when my kids were two that it was really important to value their voice.  
+          I remember reading when my kids were tiny that it was really important to value their voice.  
           So I tried to answer <strong>all</strong> their questions — even when there were fifty in a row (or at least it felt like that many…).
         </p>
 
         <p>
-          Adult questions are just as important, but they’re much harder to come by —  
+          Adult questions are just as important, but they’re much harder to answer - 
           until AI came along.
         </p>
 
@@ -76,7 +76,7 @@ export default function ManifestoPage() {
         </p>
 
         <p>
-          Who knows what beautiful, unexpected places it might lead?
+          Who knows what beautiful, unexpected places it might lead to?
         </p>
 
         {/* Signature – warm and personal */}
