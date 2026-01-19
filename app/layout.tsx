@@ -36,7 +36,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       {/* head unchanged */}
-      <body className="...">
+<body
+  className={`${geistSans.variable} ${geistMono.variable} ${signatureFont.variable} antialiased`}
+>
         <header className="border-b bg-white/80 backdrop-blur sticky top-0 z-50">
           <nav className="max-w-4xl mx-auto p-6 flex justify-between items-center">
             <Link href="/" className="text-4xl font-normal tracking-wide" style={{ fontFamily: "var(--font-signature)" }}>
