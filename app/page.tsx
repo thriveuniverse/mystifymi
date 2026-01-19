@@ -172,8 +172,8 @@ export default function Home() {
       <article className="group bg-white rounded-2xl overflow-hidden border border-cream-muted hover:border-rose-gold transition-all shadow-sm hover:shadow-lg">
         <div className="relative h-44">
           <Image
-            src="/images/untangling-thumbnail.jpg"
-            alt="Untangling post thumbnail"
+            src="/images/personal-empowerment.jpg"
+            alt="Untangling post about personal empowerment"
             fill
             className="object-cover"
           />
@@ -199,8 +199,8 @@ export default function Home() {
       <article className="group bg-white rounded-2xl overflow-hidden border border-cream-muted hover:border-rose-gold transition-all shadow-sm hover:shadow-lg">
         <div className="relative h-44">
           <Image
-            src="/images/weaving-thumbnail.jpg"
-            alt="Weaving post thumbnail"
+            src="/images/optimus-ai-abundance.jpg"
+            alt="Weaving post about the future with abundance"
             fill
             className="object-cover"
           />
@@ -226,8 +226,8 @@ export default function Home() {
       <article className="group bg-white rounded-2xl overflow-hidden border border-cream-muted hover:border-rose-gold transition-all shadow-sm hover:shadow-lg">
         <div className="relative h-44">
           <Image
-            src="/images/another-thumbnail.jpg"
-            alt="Another post thumbnail"
+            src="/images/ai-the-equaliser.jpg"
+            alt="exploring how ai can help society heal"
             fill
             className="object-cover"
           />
@@ -235,13 +235,13 @@ export default function Home() {
 
         <div className="p-6">
           <h3 className="text-xl font-semibold text-green-strong mb-2 group-hover:text-green-soft transition">
-            A Third Thread
+            AI Can be a Social Equaliser
           </h3>
           <p className="text-secondary mb-4">
-            A quieter reflection, still finding its shape…
+            It doesn't have to be dystopia — AI can help society heal and grow…
           </p>
           <Link
-            href="/blog/third-post"
+            href="/blog/humans-are-the-interface-for-AI-era"
             className="inline-flex items-center text-green-soft font-medium hover:underline"
           >
             Read more →
