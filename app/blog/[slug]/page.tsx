@@ -43,7 +43,7 @@ export default async function PostPage({
     author: {
       "@type": "Person",
       name: "Mirrie",
-      url: "https://mystifymi.netlify.app/about",
+      url: "https://mystifymi.com/about",
     },
     image: "/images/hero.jpg",
     keywords: (post.frontmatter.tags as string[] | undefined)?.join(", "),
