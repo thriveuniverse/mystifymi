@@ -9,6 +9,7 @@ interface PostMetadata {
   date: string;
   excerpt?: string;
   tags?: string[];
+  image?: string;
   [key: string]: any; // for any extra fields
 }
 
@@ -30,7 +31,7 @@ export function getAllPosts(): (PostMetadata & { slug: string })[] {
   });
 
   // Sort by date descending
-  return posts.sort((a, b) => 
+  return posts.sort((a, b) =>
     new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 }

@@ -20,6 +20,12 @@ function getPost(slug: string) {
   return { content, frontmatter: data };
 }
 
+import Image from 'next/image';
+
+const components = {
+  Image,
+};
+
 export default async function PostPage({
   params,
 }: {
@@ -74,7 +80,7 @@ export default async function PostPage({
           </div>
         </div>
 
-        <MDXRemote source={post.content} />
+        <MDXRemote source={post.content} components={components} />
       </article>
     </>
   );
