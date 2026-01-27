@@ -1,101 +1,127 @@
-@import "tailwindcss";
-
-/* =========================
-   Theme variables
-   ========================= */
-:root {
-  /* Base colours */
-  --background: #faf4e9;   /* warm cream */
-  --foreground: #1F3D2B;   /* deep forest green */
-
-  /* Greens */
-  --green-strong: #1F3D2B; /* headings, primary text */
-  --green-soft: #2F5D44;   /* links, buttons */
-  --green-muted: #8FAF9A;  /* subtle accents */
-
-  /* Neutrals */
-  --cream-soft: #F5EFE4;
-  --cream-muted: #E9E0D2;
-  /* Reds */
-  --red-deep: #6B1F1A;
-  --red-soft: #9A3A32;
-
-  /* Golds */
-  --gold-soft: #C6A75E;
-  --gold-deep: #9E8442;
-}
-
-/* =========================
-   Tailwind theme bridge
-   ========================= */
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-
-  --color-primary: var(--green-strong);
-  --color-secondary: var(--green-soft);
-  --color-accent: var(--green-muted);
-
-  --color-surface: var(--cream-muted);
-
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  /* Borders */
-  --color-border: var(--cream-muted);
-  --color-border-hover: var(--green-muted);
-
-  /* Interactive */
-  --color-link: var(--green-soft);
-  --color-link-hover: var(--green-strong);
-
-  /* Accent (rare, intentional) */
-  --color-accent: var(--green-muted);
-
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-
-  --color-accent: var(--gold-soft);
-  --color-accent-strong: var(--gold-deep);
-
-  --color-emphasis: var(--red-soft);
-  --color-emphasis-strong: var(--red-deep);
-  
-}
-
-
-
-/* =========================
-   Dark mode (warm, not harsh)
-   ========================= */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #121A16;
-    --foreground: #E6EFE9;
-
-    --green-strong: #A7C7B5;
-    --green-soft: #8FAF9A;
-    --green-muted: #5C7F6B;
-
-    --cream-soft: #121A16;
-    --cream-muted: #1A2620;
-
-     --red-deep: #B56A62;
-    --red-soft: #D08A82;
-
-    --gold-soft: #D8C27A;
-    --gold-deep: #BFA25E;
-  }
-}
-
-/* =========================
-   Base styles
-   ========================= */
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.prose img {
-  border-radius: 1rem;
-  margin: 2rem auto;
-}
+@import "tailwindcss";
+
+/* =========================
+   Theme variables
+   ========================= */
+:root {
+  /* Base colours */
+  --background: #faf4e9;   /* warm cream */
+  --foreground: #1F3D2B;   /* deep forest green */
+
+  /* Greens */
+  --green-strong: #1F3D2B; /* headings, primary text */
+  --green-soft: #2F5D44;   /* links, buttons */
+  --green-muted: #8FAF9A;  /* subtle accents */
+
+  /* Neutrals */
+  --cream-soft: #F5EFE4;
+  --cream-muted: #E9E0D2;
+  /* Reds */
+  --red-deep: #6B1F1A;
+  --red-soft: #9A3A32;
+
+  /* Golds */
+  --gold-soft: #C6A75E;
+  --gold-deep: #9E8442;
+}
+
+/* =========================
+   Tailwind theme bridge
+   ========================= */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--green-strong);
+  --color-secondary: var(--green-soft);
+  --color-accent: var(--green-muted);
+
+  --color-surface: var(--cream-muted);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* Borders */
+  --color-border: var(--cream-muted);
+  --color-border-hover: var(--green-muted);
+
+  /* Interactive */
+  --color-link: var(--green-soft);
+  --color-link-hover: var(--green-strong);
+
+  /* Accent (rare, intentional) */
+  --color-accent: var(--green-muted);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-accent: var(--gold-soft);
+  --color-accent-strong: var(--gold-deep);
+
+  --color-emphasis: var(--red-soft);
+  --color-emphasis-strong: var(--red-deep);
+  
+}
+
+
+
+/* =========================
+   Dark mode (warm, not harsh)
+   ========================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121A16;
+    --foreground: #E6EFE9;
+
+    --green-strong: #A7C7B5;
+    --green-soft: #8FAF9A;
+    --green-muted: #5C7F6B;
+
+    --cream-soft: #121A16;
+    --cream-muted: #1A2620;
+
+     --red-deep: #B56A62;
+    --red-soft: #D08A82;
+
+    --gold-soft: #D8C27A;
+    --gold-deep: #BFA25E;
+  }
+}
+
+/* =========================
+   Base styles
+   ========================= */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.prose img {
+  border-radius: 1rem;
+  margin: 2rem auto;
+}
+
+/* Custom Prose styles to ensure paragraph and list spacing */
+.prose p {
+  margin-top: 1em; /* Standard paragraph spacing */
+  margin-bottom: 1em;
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 1em; /* Spacing above/below lists */
+  margin-bottom: 1em;
+  padding-left: 1.5em; /* Indent lists */
+}
+
+.prose ul li,
+.prose ol li {
+  margin-bottom: 0.5em; /* Space between list items */
+}
+
+.prose ul {
+  list-style-type: disc; /* Ensure disc bullets for unordered lists */
+}
+
+.prose ol {
+  list-style-type: decimal; /* Ensure decimal numbering for ordered lists */
+}
