@@ -1,10 +1,9 @@
-import remarkGfm from 'remark-gfm';
 import createNextMdx from '@next/mdx';
 
 const withMDX = createNextMdx({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: ['remark-gfm'],
     rehypePlugins: [],
   },
 });
